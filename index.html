@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pour Salma</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Great Vibes', cursive;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .carte {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 30px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      padding: 50px;
+      max-width: 600px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #e91e63;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.6em;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    .signature {
+      margin-top: 40px;
+      font-size: 1.3em;
+      color: #888;
+    }
+
+    /* Coeurs animés */
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff69b4;
+      transform: rotate(45deg);
+      animation: float 6s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff69b4;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes float {
+      0% {
+        bottom: -50px;
+        left: calc(50% - 10px);
+        transform: scale(0.8) rotate(45deg);
+      }
+      50% {
+        transform: scale(1.1) rotate(45deg);
+      }
+      100% {
+        bottom: 120%;
+        left: calc(50% + 30px);
+        transform: scale(0.8) rotate(45deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carte">
+    <h1>À toi, Salma 7biba dyali</h1>
+    <p>
+      Il y a dans ton regard une lumière que même les étoiles envient. <br>
+      Chaque mot que tu dis résonne en moi comme une mélodie douce. <br>
+      Tu es la poésie que je relis en silence, le rêve qui m’accompagne éveillé. <br>
+      Tant que tu es là, chaque instant devient éternité.
+    </p>
+    <div class="signature">– Ton admirateur secret SIMO 💖</div>
+    
+    <!-- Cœurs flottants -->
+    <div class="heart" style="left:10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left:30%; animation-delay: 2s;"></div>
+    <div class="heart" style="left:60%; animation-delay: 4s;"></div>
+    <div class="heart" style="left:80%; animation-delay: 1s;"></div>
+  </div>
+</body>
+</html>
